@@ -1,0 +1,46 @@
+name: Feature or applet request
+description: Suggest an improvement or a new WebApplet. English or German welcome.
+title: "[Feature]: "
+labels: [enhancement, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or German welcome. Deutsch ist ebenfalls willkommen.
+        Please search [existing issues](https://github.com/PuppetTerm/puppet-term-community/issues) first.
+        Describe the task you want to complete. Remove secrets and private information before posting.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - PuppetTerm app
+        - Existing WebApplet
+        - New WebApplet
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: applet
+    attributes:
+      label: Applet name, if relevant
+      description: Enter the existing applet's name or a suggested name for a new one.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the problem or task and what makes it difficult today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to change?
+      description: Describe the desired behavior or the purpose of the new applet.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples, alternatives or screenshots (optional)
+      description: A concrete use case or an alternative you have tried can help explain the request.

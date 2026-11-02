@@ -1,0 +1,48 @@
+name: Question or help
+description: Ask a question about using PuppetTerm or a WebApplet. English or German welcome.
+title: "[Help]: "
+labels: [question, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or German welcome. Deutsch ist ebenfalls willkommen.
+        If something is broken, please use the [bug report form](https://github.com/PuppetTerm/puppet-term-community/issues/new?template=01-bug-report.yml).
+        This question is public. Remove secrets and private information before posting.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - PuppetTerm app
+        - WebApplet
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: PuppetTerm version (optional)
+      description: Find it in PuppetTerm → About PuppetTerm.
+  - type: input
+    id: applet
+    attributes:
+      label: Applet name and version, if relevant
+      description: Find these in Settings → WebApplets → Local. You can enter any applet name.
+  - type: textarea
+    id: question
+    attributes:
+      label: How can we help?
+      description: Describe what you are trying to do and your question.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried? (optional)
+      description: Include any relevant settings, steps or resources you have already checked.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context or screenshots (optional)
+      description: Share only information that is safe to make public.

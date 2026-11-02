@@ -1,0 +1,75 @@
+name: Bug report
+description: Report a problem with PuppetTerm or a WebApplet. English or German welcome.
+title: "[Bug]: "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or German welcome. Deutsch ist ebenfalls willkommen.
+        Please search [existing issues](https://github.com/PuppetTerm/puppet-term-community/issues) first.
+        This report is public. Remove secrets and private information from text and attachments.
+        For security-sensitive reports, use [private contact](https://puppet-term.app/contact.php).
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - PuppetTerm app
+        - WebApplet
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: PuppetTerm version
+      description: Find it in PuppetTerm → About PuppetTerm. If the app will not start, give the downloaded version or write "unknown".
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      description: Find it in the Apple menu → About This Mac.
+    validations:
+      required: true
+  - type: input
+    id: applet
+    attributes:
+      label: Applet name and version, if relevant
+      description: Find these in Settings → WebApplets → Local. You can enter any applet name.
+  - type: input
+    id: tool
+    attributes:
+      label: AI coding tool and version, if relevant
+      description: For example, Claude Code, Codex, OpenCode, Gemini CLI or another tool.
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+      description: Describe the problem and include any visible error message.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the shortest steps you know. If it happens intermittently, describe when and how often.
+      placeholder: |
+        1. Open …
+        2. Choose …
+        3. Observe …
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots, diagnostics or additional context (optional)
+      description: You can drag files here. Export diagnostics through Help → Diagnostics … → Start Diagnostics → Export Report …. Review attachments before sharing them publicly.

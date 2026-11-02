@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: PuppetTerm website and downloads
+    url: https://puppet-term.app/
+    about: Product information and the latest macOS download.
+  - name: WebApplet catalog
+    url: https://puppet-term.app/applets
+    about: Browse available WebApplets.
+  - name: Private contact
+    url: https://puppet-term.app/contact.php
+    about: Use the contact form for security-sensitive reports or private information.
